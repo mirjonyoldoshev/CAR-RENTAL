@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- -------- Header start  ------- -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <a href="" class="nav__logo"
+              ><img src="./assets/images/Logo.png" alt="Logo"
+            /></a>
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link">Categories</a>
+            </li>
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link"
+                >About Us
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.1528 8.22212C15.4213 8.4906 15.4213 8.9259 15.1528 9.19439L11.4861 12.8611C11.2177 13.1295 10.7824 13.1295 10.5139 12.8611L6.84721 9.19439C6.57872 8.9259 6.57872 8.4906 6.84721 8.22212C7.11569 7.95363 7.55099 7.95363 7.81948 8.22212L11 11.4026L14.1805 8.22212C14.449 7.95363 14.8843 7.95363 15.1528 8.22212Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav__list--item">
+              <a href="#" class="nav__list--item-link"
+                >Help center
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.1528 8.22212C15.4213 8.4906 15.4213 8.9259 15.1528 9.19439L11.4861 12.8611C11.2177 13.1295 10.7824 13.1295 10.5139 12.8611L6.84721 9.19439C6.57872 8.9259 6.57872 8.4906 6.84721 8.22212C7.11569 7.95363 7.55099 7.95363 7.81948 8.22212L11 11.4026L14.1805 8.22212C14.449 7.95363 14.8843 7.95363 15.1528 8.22212Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav__menu">
+            <li><img src="./assets/images/Group 34411.svg" alt="" /></li>
+          </ul>
+          <ul>
+            <li class="nav__list--item">
+              <a href="tel:+1 855 420 0000">+1 855 420 0000</a>
+            </li>
+            <li class="nav__list--item">
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M11 3.20825C6.69676 3.20825 3.20831 6.6967 3.20831 10.9999C3.20831 15.3031 6.69676 18.7916 11 18.7916C15.0495 18.7916 18.377 15.7027 18.7558 11.7523C18.7734 11.5684 18.6789 11.3919 18.5162 11.3046C18.3534 11.2173 18.1541 11.2362 18.0107 11.3526C17.2227 11.9921 16.2192 12.3749 15.125 12.3749C12.5937 12.3749 10.5416 10.3229 10.5416 7.79158C10.5416 6.28816 11.265 4.9538 12.3847 4.11728C12.5327 4.00667 12.5999 3.81799 12.555 3.63873C12.51 3.45947 12.3619 3.32472 12.1792 3.29697C11.7944 3.23852 11.4006 3.20825 11 3.20825Z"
+                    fill="#FFF"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="nav__list--item">
+              <button class="nav__list--item__button2">
+                Login
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M10.3125 17.4166C10.3125 17.0369 10.6203 16.7291 11 16.7291H16.5C16.6265 16.7291 16.7291 16.6265 16.7291 16.4999L16.7291 5.49992C16.7291 5.37335 16.6265 5.27075 16.5 5.27075L11 5.27075C10.6203 5.27075 10.3125 4.96295 10.3125 4.58325C10.3125 4.20356 10.6203 3.89575 11 3.89575H16.5C17.3859 3.89575 18.1041 4.61396 18.1041 5.49992V16.4999C18.1041 17.3859 17.3859 18.1041 16.5 18.1041H11C10.6203 18.1041 10.3125 17.7963 10.3125 17.4166Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M3.20831 12.0222C3.20831 12.5285 3.61872 12.9389 4.12498 12.9389H8.5763C8.59732 13.2647 8.62363 13.5902 8.65524 13.9154L8.68243 14.1952C8.72664 14.65 9.20968 14.9225 9.62183 14.7249C11.2974 13.9219 12.8143 12.8231 14.0995 11.4812L14.127 11.4525C14.3718 11.1969 14.3718 10.7937 14.127 10.5381L14.0995 10.5094C12.8143 9.16753 11.2974 8.06866 9.62183 7.26564C9.20969 7.06812 8.72664 7.34055 8.68243 7.79544L8.65524 8.0752C8.62363 8.40037 8.59732 8.72592 8.5763 9.05173L4.12498 9.05173C3.61872 9.05173 3.20831 9.46214 3.20831 9.9684V12.0222Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- -------- Header end  ------- -->
+
+    <main>
+      <section id="intro" class="container">
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/Group-1.jpg" alt="slider 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Group-2.jpg" alt="slider 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Group-3.jpg" alt="slider 3" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="find">
+        <input type="text" placeholder="Find the car of your dreams" />
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.3851 15.4458C11.7348 17.5685 7.85538 17.4014 5.3986 14.9446C2.76256 12.3086 2.76256 8.0347 5.3986 5.39866C8.03464 2.76262 12.3085 2.76262 14.9445 5.39866C17.4013 7.85544 17.5684 11.7349 15.4457 14.3851L20.6014 19.5408C20.8943 19.8337 20.8943 20.3085 20.6014 20.6014C20.3085 20.8943 19.8336 20.8943 19.5407 20.6014L14.3851 15.4458ZM6.45926 13.8839C4.40901 11.8337 4.40901 8.50957 6.45926 6.45932C8.50951 4.40907 11.8336 4.40907 13.8839 6.45932C15.9326 8.50807 15.9341 11.8288 13.8884 13.8794C13.8869 13.8809 13.8854 13.8824 13.8839 13.8839C13.8824 13.8854 13.8809 13.8869 13.8794 13.8884C11.8288 15.9342 8.50801 15.9327 6.45926 13.8839Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <section id="choose" class="container">
+        <div class="choose_part1">
+          <h2>Choose the car of your dreams</h2>
+          <p>
+            We provide our customers with the most incredible driving emotions.
+            That is why there are only world-class cars in our fleet
+          </p>
+          <div class="choose_button-part">
+            <button>Compact</button>
+            <button>Sports cars</button>
+            <button>Vans</button>
+          </div>
+        </div>
+        <div class="choose_part2">
+          <div class="card">
+            <h3>Ford Fiesta</h3>
+            <p>Economy Car</p>
+            <img src="./assets/images/image 13.png" alt="" />
+            <div>
+              <div>
+                <img src="./assets/images/User.svg" alt="" />
+                <p>5 Seats</p>
+              </div>
+              <div>
+                <img src="./assets/images/gear 1.svg" alt="" />
+                <p>Automatic</p>
+              </div>
+              <div>
+                <img src="./assets/images/File-user.png" alt="" />
+                <p>21+ Years</p>
+              </div>
+              <div>
+                <img src="./assets/images/petrol 1.svg" alt="" />
+                <p>1-lit / 2.5 km</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Nissan Versa</h3>
+            <p>Compact Car</p>
+            <img src="./assets/images/image 13 (1).png" alt="" />
+            <div>
+              <div>
+                <img src="./assets/images/User.svg" alt="" />
+                <p>5 Seats</p>
+              </div>
+              <div>
+                <img src="./assets/images/gear 1.svg" alt="" />
+                <p>Automatic</p>
+              </div>
+              <div>
+                <img src="./assets/images/File-user.png" alt="" />
+                <p>21+ Years</p>
+              </div>
+              <div>
+                <img src="./assets/images/petrol 1.svg" alt="" />
+                <p>1-lit / 2.5 km</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Toyota Corolla</h3>
+            <p>Mid-size Car</p>
+            <img src="./assets/images/image 13 (2).png" alt="" />
+            <div>
+              <div>
+                <img src="./assets/images/User.svg" alt="" />
+                <p>5 Seats</p>
+              </div>
+              <div>
+                <img src="./assets/images/gear 1.svg" alt="" />
+                <p>Automatic</p>
+              </div>
+              <div>
+                <img src="./assets/images/File-user.png" alt="" />
+                <p>21+ Years</p>
+              </div>
+              <div>
+                <img src="./assets/images/petrol 1.svg" alt="" />
+                <p>1-lit / 2.5 km</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Nissan Rogue</h3>
+            <p>Mid-size SUV</p>
+            <img src="./assets/images/image 13 (3).png" alt="" />
+            <div>
+              <div>
+                <img src="./assets/images/User.svg" alt="" />
+                <p>5 Seats</p>
+              </div>
+              <div>
+                <img src="./assets/images/gear 1.svg" alt="" />
+                <p>Automatic</p>
+              </div>
+              <div>
+                <img src="./assets/images/File-user.png" alt="" />
+                <p>21+ Years</p>
+              </div>
+              <div>
+                <img src="./assets/images/petrol 1.svg" alt="" />
+                <p>1-lit / 2.5 km</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Chevy Traverse</h3>
+            <p>Full-size SUV</p>
+            <img src="./assets/images/image 13 (4).png" alt="" />
+            <div>
+              <div>
+                <img src="./assets/images/User.svg" alt="" />
+                <p>5 Seats</p>
+              </div>
+              <div>
+                <img src="./assets/images/gear 1.svg" alt="" />
+                <p>Automatic</p>
+              </div>
+              <div>
+                <img src="./assets/images/File-user.png" alt="" />
+                <p>21+ Years</p>
+              </div>
+              <div>
+                <img src="./assets/images/petrol 1.svg" alt="" />
+                <p>1-lit / 2.5 km</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Nissan Altima</h3>
+            <p>Full-size Car</p>
+            <img src="./assets/images/image 13 (5).png" alt="" />
+            <div>
+              <div>
+                <img src="./assets/images/User.svg" alt="" />
+                <p>5 Seats</p>
+              </div>
+              <div>
+                <img src="./assets/images/gear 1.svg" alt="" />
+                <p>Automatic</p>
+              </div>
+              <div>
+                <img src="./assets/images/File-user.png" alt="" />
+                <p>21+ Years</p>
+              </div>
+              <div>
+                <img src="./assets/images/petrol 1.svg" alt="" />
+                <p>1-lit / 2.5 km</p>
+              </div>
+            </div>
+          </div>
+
+          <button>View all cars</button>
+        </div>
+      </section>
+
+      <section id="google" class="container">
+        <div class="google_part1">
+          <div class="google__text">
+            <a href="#">From Google</a>
+            <h1>Hear what the community is saying</h1>
+          </div>
+          <div class="line-google"></div>
+          <div class="google__button">
+            <p>More interesting reviews on Instagram</p>
+            <button>Instagram</button>
+          </div>
+        </div>
+        <div class="google__img">
+          <img src="./assets/images/Reviews.png" alt="" />
+        </div>
+      </section>
+
+      <div class="container after-google" style="margin-top: 50px">
+        <img src="./assets/images/Brands of cars.png" alt="" />
+      </div>
+
+      <section class="container" id="service">
+        <div class="service-text">
+          <h1>Unparalleled service</h1>
+          <p>
+            Whether you are looking for Newark Airport car rental, an insurance
+            replacement vehicle or minivan to take on vacation Car rental has it
+            all.
+          </p>
+        </div>
+        <div class="service-cards">
+          <div class="card-service">
+            <h1>
+              Book online, <br />
+              pay online
+            </h1>
+            <p>Complete the booking process A-Z, with our easy online system</p>
+            <img src="./assets/images/Desktop.png" alt="" />
+          </div>
+          <div class="card-service">
+            <h1>Guaranteed car reservation</h1>
+            <p>
+              When you book with Car rental, you can be confident your car will
+              be waiting for you
+            </p>
+            <img src="./assets/images/Shield.png" alt="" />
+          </div>
+          <div class="card-service">
+            <h1>Unparalleled customer service</h1>
+            <p>
+              We're here to help. We pride ourselves in our customer service
+            </p>
+            <img src="./assets/images/User-clock.png" alt="" />
+          </div>
+          <div class="card-service">
+            <h1>No reservation or booking fees</h1>
+            <p>
+              No cancellation fees if cancelled 24 hours prior to booking time
+            </p>
+            <img src="./assets/images/Wallet.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="rental">
+        <div class="rental-text">
+          <h1>Car rental keeps you safe</h1>
+          <p>
+            The safety of our employees and renters is our number one priority.
+            In addition to being confident your vehicle is cleaned and sanitized
+            every time you rent, you can also feel confident that we will take
+            every opportunity to enhance the health and safety measures
+            currently practiced in our operations.
+          </p>
+
+          <div class="rental-cards">
+            <div class="card-rental">
+              <img src="./assets/images/Flask-alt.png" alt="" />
+              <h3>Every car is thoroughly sanitized and cleaned</h3>
+            </div>
+            <div class="card-rental">
+              <img src="./assets/images/Heartbeat.png" alt="" />
+              <h3>All of our employees wear masks</h3>
+            </div>
+            <div class="card-rental">
+              <img src="./assets/images/Folder-lock.png" alt="" />
+              <h3>We stay up to date with all protocol from the CDC</h3>
+            </div>
+          </div>
+        </div>
+        <div class="car-rental__img">
+          <img
+            src="./assets/images/wepik--2022427-105555-removebg-preview 1.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-part1">
+        <div class="footer-p">
+          <img src="./assets/images/Logo.png" alt="" />
+          <p>
+            Car rental offers a wide range of cars available for rent in Newark
+            EWR Airport NJ. We pride ourselves in our customer service, and
+            hassle-free renting experience.
+          </p>
+        </div>
+        <ul>
+          <li><strong>Main</strong></li>
+          <li><p>My Bookings</p></li>
+          <li><p>Reservation</p></li>
+        </ul>
+        <ul>
+          <li><strong>Categories</strong></li>
+          <li><p>Compact</p></li>
+          <li><p>Sports cars</p></li>
+          <li><p>Vans</p></li>
+        </ul>
+        <ul>
+          <li><strong>Company</strong></li>
+          <li><p>About us</p></li>
+          <li><p>Careers</p></li>
+          <li><p>News</p></li>
+          <li><p>Contact us</p></li>
+        </ul>
+        <ul>
+          <li class="ul-position">
+            <strong>Our Locations</strong></li>
+          <li></li><p class="ul-position">2118 Thornridge Cir. Syracuse</p></li>
+          <li></li><p class="ul-position">4140 Parker Rd. Allentown</p></li>
+          <li></li><p class="ul-position">4517 Washington Ave.</p></li>
+        </ul>
+      </div>
+      <div class="footer-part2">
+        <div>
+          <img
+            src="./assets/images/© 2022 Car rentalTerms & Conditions.png"
+            alt=""
+          />
+        </div>
+        <div class="footer-ul">
+          <ul>
+            <li><h3>Contact</h3></li>
+            <li><a href="tel:+1 855 420 0000">+1 855 420 0000</a></li>
+            <li><p>Reservation</p></li>
+          </ul>
+          <ul>
+            <li><h3>Hours of operation</h3></li>
+            <li><p>8:00 - 21:00 Mon-Sat</p></li>
+            <li><p>9:00 - 15:00 Sundays</p></li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Social network</h3>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="black" />
+                  <path
+                    d="M20 11.8072C22.6506 11.8072 23.0121 11.8072 24.0964 11.8072C25.0602 11.8072 25.5422 12.0482 25.9036 12.1687C26.3855 12.4096 26.747 12.5301 27.1084 12.8916C27.4699 13.253 27.7108 13.6145 27.8313 14.0964C27.9518 14.4578 28.0723 14.9398 28.1928 15.9036C28.1928 16.988 28.1928 17.2289 28.1928 20C28.1928 22.7711 28.1928 23.0121 28.1928 24.0964C28.1928 25.0602 27.9518 25.5422 27.8313 25.9036C27.5904 26.3855 27.4699 26.747 27.1084 27.1084C26.747 27.4699 26.3855 27.7108 25.9036 27.8313C25.5422 27.9518 25.0602 28.0723 24.0964 28.1928C23.0121 28.1928 22.7711 28.1928 20 28.1928C17.2289 28.1928 16.988 28.1928 15.9036 28.1928C14.9398 28.1928 14.4578 27.9518 14.0964 27.8313C13.6145 27.5904 13.253 27.4699 12.8916 27.1084C12.5301 26.747 12.2892 26.3855 12.1687 25.9036C12.0482 25.5422 11.9277 25.0602 11.8072 24.0964C11.8072 23.0121 11.8072 22.7711 11.8072 20C11.8072 17.2289 11.8072 16.988 11.8072 15.9036C11.8072 14.9398 12.0482 14.4578 12.1687 14.0964C12.4096 13.6145 12.5301 13.253 12.8916 12.8916C13.253 12.5301 13.6145 12.2892 14.0964 12.1687C14.4578 12.0482 14.9398 11.9277 15.9036 11.8072C16.988 11.8072 17.3494 11.8072 20 11.8072ZM20 10C17.2289 10 16.988 10 15.9036 10C14.8193 10 14.0964 10.241 13.494 10.4819C12.8916 10.7229 12.2892 11.0843 11.6867 11.6867C11.0843 12.2892 10.8434 12.7711 10.4819 13.494C10.241 14.0964 10.1205 14.8193 10 15.9036C10 16.988 10 17.3494 10 20C10 22.7711 10 23.0121 10 24.0964C10 25.1807 10.241 25.9036 10.4819 26.506C10.7229 27.1084 11.0843 27.7108 11.6867 28.3133C12.2892 28.9157 12.7711 29.1566 13.494 29.5181C14.0964 29.759 14.8193 29.8795 15.9036 30C16.988 30 17.3494 30 20 30C22.6506 30 23.0121 30 24.0964 30C25.1807 30 25.9036 29.759 26.506 29.5181C27.1084 29.2771 27.7108 28.9157 28.3133 28.3133C28.9157 27.7108 29.1566 27.2289 29.5181 26.506C29.759 25.9036 29.8795 25.1807 30 24.0964C30 23.0121 30 22.6506 30 20C30 17.3494 30 16.988 30 15.9036C30 14.8193 29.759 14.0964 29.5181 13.494C29.2771 12.8916 28.9157 12.2892 28.3133 11.6867C27.7108 11.0843 27.2289 10.8434 26.506 10.4819C25.9036 10.241 25.1807 10.1205 24.0964 10C23.0121 10 22.7711 10 20 10Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M20 14.8193C17.1084 14.8193 14.8193 17.1084 14.8193 20C14.8193 22.8916 17.1084 25.1807 20 25.1807C22.8916 25.1807 25.1807 22.8916 25.1807 20C25.1807 17.1084 22.8916 14.8193 20 14.8193ZM20 23.3735C18.1928 23.3735 16.6265 21.9277 16.6265 20C16.6265 18.1928 18.0723 16.6265 20 16.6265C21.8072 16.6265 23.3735 18.0723 23.3735 20C23.3735 21.8072 21.8072 23.3735 20 23.3735Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M25.3012 15.9036C25.9666 15.9036 26.506 15.3642 26.506 14.6988C26.506 14.0334 25.9666 13.494 25.3012 13.494C24.6358 13.494 24.0964 14.0334 24.0964 14.6988C24.0964 15.3642 24.6358 15.9036 25.3012 15.9036Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="black" />
+                  <path
+                    d="M30.6 14.9C29.9 15.2 29.1 15.4 28.3 15.5C29.1 15 29.8 14.2 30.1 13.3C29.3 13.8 28.5 14.1 27.5 14.3C26.8 13.5 25.7 13 24.6 13C22.4 13 20.6 14.8 20.6 17C20.6 17.3 20.6 17.6 20.7 17.9C17.4 17.7 14.4 16.1 12.4 13.7C12.1 14.3 11.9 15 11.9 15.7C11.9 17.1 12.6 18.3 13.7 19C13 19 12.4 18.8 11.9 18.5C11.9 20.4 13.3 22.1 15.1 22.4C14.8 22.5 14.4 22.5 14 22.5C13.7 22.5 13.5 22.5 13.2 22.4C13.7 24 15.2 25.2 17 25.2C15.6 26.3 13.9 26.9 12 26.9C11.7 26.9 11.4 26.9 11 26.8C12.8 27.9 14.9 28.6 17.2 28.6C24.6 28.6 28.6 22.5 28.6 17.2V16.7C29.4 16.4 30.1 15.7 30.6 14.9Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="black" />
+                  <path
+                    d="M21.6571 20.3648H25.3793L25.9637 16.5605H21.6563V14.4813C21.6563 12.901 22.1696 11.4996 23.6389 11.4996H26V8.17974C25.5852 8.12338 24.7078 8 23.05 8C19.5882 8 17.5587 9.8393 17.5587 14.0297V16.5605H14V20.3648H17.5587V30.821C18.2634 30.9276 18.9773 31 19.7101 31C20.3724 31 21.0189 30.9391 21.6571 30.8522V20.3648Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <rect width="40" height="40" rx="20" fill="black" />
+                  <path
+                    d="M27.9268 12.0625C25.9512 10.0937 23.3171 9 20.5366 9C14.7561 9 10.0732 13.6667 10.0732 19.4271C10.0732 21.25 10.5854 23.0729 11.4634 24.6042L10 30L15.561 28.5417C17.0976 29.3438 18.7805 29.7812 20.5366 29.7812C26.3171 29.7812 31 25.1146 31 19.3542C30.9268 16.6563 29.9024 14.0312 27.9268 12.0625ZM25.5854 23.1458C25.3659 23.7292 24.3415 24.3125 23.8293 24.3854C23.3902 24.4583 22.8049 24.4583 22.2195 24.3125C21.8537 24.1667 21.3415 24.0208 20.7561 23.7292C18.122 22.6354 16.439 20.0104 16.2927 19.7917C16.1463 19.6458 15.1951 18.4062 15.1951 17.0937C15.1951 15.7812 15.8537 15.1979 16.0732 14.9062C16.2927 14.6146 16.5854 14.6146 16.8049 14.6146C16.9512 14.6146 17.1707 14.6146 17.3171 14.6146C17.4634 14.6146 17.6829 14.5417 17.9024 15.0521C18.122 15.5625 18.6341 16.875 18.7073 16.9479C18.7805 17.0938 18.7805 17.2396 18.7073 17.3854C18.6341 17.5312 18.561 17.6771 18.4146 17.8229C18.2683 17.9687 18.1219 18.1875 18.0488 18.2604C17.9024 18.4062 17.7561 18.5521 17.9024 18.7708C18.0488 19.0625 18.561 19.8646 19.3659 20.5937C20.3902 21.4687 21.1951 21.7604 21.4878 21.9063C21.7805 22.0521 21.9268 21.9792 22.0732 21.8333C22.2195 21.6875 22.7317 21.1042 22.878 20.8125C23.0244 20.5208 23.2439 20.5938 23.4634 20.6667C23.6829 20.7396 25 21.3958 25.2195 21.5417C25.5122 21.6875 25.6585 21.7604 25.7317 21.8333C25.8049 22.0521 25.8049 22.5625 25.5854 23.1458Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-button">
+          <button>
+            <img src="./assets/images/Arrow up.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+      autoplay: true,
+      duration: 2000,
+    });
+  </script>
+</html>

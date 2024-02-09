@@ -1,0 +1,132 @@
+header {
+  width: 100%;
+  border-bottom: 2px solid #E5E7EA;
+
+  // example
+
+  .nav {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & .nav__menu{
+      img{
+        display: none;
+      }
+    }
+
+    & ul {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      button {
+        display: flex;
+      }
+
+      .nav__list--item-link {
+        display: flex;
+        align-items: center;
+      }
+    }
+    & ul:nth-child(1) {
+      display: flex;
+      align-items: center;
+      align-items: center;
+    }
+
+    button {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: none;
+        
+    
+
+      &:hover {
+        svg {
+          path {
+            fill: #000000;
+          }
+        }
+      }
+
+      &:active {
+        background-color: #299764;
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+    .nav__list--item__button2{
+        width: 142px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        border: none;
+        color: #FFF;
+        background-color: #299764;
+          
+      
+  
+        &:hover {
+            background-color: #077743;
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
+        }
+        &:active {
+            background-color: #F5F5F5;
+            color: #000000;
+            svg {
+              path {
+                fill: #000000;
+              }
+            }
+          }
+    }
+
+    &__list--item a {
+      color: black;
+    }
+
+    &__list {
+      display: flex;
+      gap: 50px;
+      list-style-type: none;
+
+      &--item {
+        text-transform: uppercase;
+
+        &-link {
+          text-decoration: none;
+          color: #000000;
+          &:hover {
+            color: #077743;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width:375px){
+    header{
+      & .nav{
+        .nav__list--item{
+          display: none;
+        }
+    }
+  }
+}
